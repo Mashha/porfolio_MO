@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
+
+$dark-color: #111844;
+$red-color: #aa1945;
+$white-color: #fffdfa;
+
+@font-face {
+  font-family: "poppinsBold";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "poppinsRegular";
+  src: url("../fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "brooklyn";
+  src: url("../fonts/Filmotype-Brooklyn.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $dark-color;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: $white-color;
+  font-family: "brooklyn";
+}
+
+#header {
+  height: 100vh;
+
+  .header-inner {
+    width: 95%;
+    margin: auto;
+    height: 100vh;
+    letter-spacing: 0.5px;
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        width: 50px;
+
+        img {
+          width: 100%;
+        }
+      }
+      .list-items {
+        list-style: none;
+        display: flex;
+        gap: 60px;
+        align-items: center;
+
+        li a {
+          text-decoration: none;
+          position: relative;
+          font-size: 18px;
+        }
+
+        li a:before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          height: 5px;
+          width: 50px;
+          background-color: $red-color;
+          z-index: -1;
+          opacity: 0;
+          border-radius: 5px;
+        }
+        li:nth-child(2) a:before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          height: 5px;
+          width: 38px;
+          background-color: $red-color;
+          z-index: -1;
+          opacity: 0;
+          border-radius: 5px;
+        }
+
+        li a:hover:before {
+          opacity: 1;
+          transition: 0.4s ease-in;
+        }
+      }
+    }
+
+    .hero-section {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      height: inherit;
+
+      .social-icons {
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        gap: 20px;
+        justify-content: center;
+        padding-left: 12px;
+       
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          position: relative;
+        }
+
+        a::before {
+          content: "";
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          background-color: $red-color;
+          z-index: -10;
+          border-radius: 50px;
+          transform: scale(0);
+          transition: transform 0.4s, opacity 0.3s;
+        }
+
+        a:hover::before {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      .hero-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .hero-inner-middle {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+
+          .image-shape {
+            width: 300px;
+            height: 300px;
+            position: relative;
+
+            .image-me {
+              position: absolute;
+              top: 5px;
+              right: 5px;
+              bottom: 5px;
+              left: 5px;
+              clip-path: polygon(
+                30% 0%,
+                70% 0%,
+                100% 30%,
+                100% 70%,
+                70% 100%,
+                30% 100%,
+                0% 70%,
+                0% 30%
+              );
+
+              img {
+                width: 100%;
+                filter: grayscale(1);
+                transition: all 0.4s ease-in-out;
+
+                &:hover {
+                  filter: none;
+                }
+              }
+            }
+          }
+
+          h1 {
+            font-size: 30px;
+
+            #name {
+              font-size: 96px;
+              font-family: "Inspiration", sans-serif;
+              color: $red-color;
+            }
+          }
+
+          p {
+            font-size: 22px;
+            margin-top: -20px;
+            border-top: 1px solid rgba(0, 0, 0, 0.24);
+            padding-top: 20px;
+          }
+
+          .buttons {
+            display: flex;
+            gap: 10px;
+
+            #btn-contact,
+            #btn-projects {
+              padding: 10px 30px;
+              text-decoration: none;
+              font-size: 18px;
+              border-radius: 10px;
+              border: none;
+            }
+
+            #btn-contact {
+              background-color: $dark-color;
+              border: none;
+              color: $white-color;
+              background: linear-gradient(to left,$dark-color 50%, $red-color 50%) right;
+              transition: transform 0.3s;
+              background-size: 200%;
+              transition: 0.5s ease-out;
+
+              &:hover {
+              background-position: left;
+              }
+            }
+
+            #btn-projects {
+              border: 3px solid $dark-color;
+              transition: all 0.3s ease-in;
+
+              &:hover {
+                border-color: $red-color;
+                color: $red-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
