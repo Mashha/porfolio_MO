@@ -13,7 +13,7 @@ $breakpoint-mobile: 508px;
 }
 @font-face {
   font-family: "PoppinsRegular";
-  src: url("../fonts/Poppins-Bold.ttf");
+  src: url("../fonts/Poppins-Regular.ttf");
 }
 @font-face {
   font-family: "Brooklyn";
@@ -278,7 +278,8 @@ body {
 
 // projects
 
-.projects {
+#projects {
+  margin-top: 30px;
   .projects-inner {
     width: 90%;
     margin: auto;
@@ -359,8 +360,9 @@ body {
         color: $red-color;
         text-decoration: none;
         opacity: 0;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
         transition-delay: 0;
+        font-family: "PoppinsBold";
       }
 
       &:hover .link-project {
@@ -480,12 +482,77 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      gap: 20px;
+      gap: 10px;
       padding: 10px;
       align-items: center;
+      letter-spacing: 0.5px;
+      font-size: 20px;
 
       p {
         font: 26px;
+
+        &:nth-child(5) {
+          padding-bottom: 30px;
+        }
+      }
+
+      #quote {
+        font-size: 16px;
+        width: 250px;
+        height: 100px;
+        background-color: #111844;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 5px;
+
+        &::before {
+          content: "";
+          width: 200px;
+          height: 150px;
+          background-color: #aa1945;
+          position: absolute;
+          z-index: -1;
+          border-radius: 100%;
+        }
+        blockquote {
+          color: #fffdfa;
+          position: relative;
+
+          &::before,
+          &::after {
+            color: #fffdfa;
+            background-color: #111844;
+            width: auto;
+            height: 30px;
+            font-size: 40px;
+            position: absolute;
+            font-family: "EB Garamond", serif;
+            border-radius: 5px;
+          }
+
+          &::before {
+            content: "“";
+            top: -10px;
+            left: -15px;
+          }
+
+          &::after {
+            content: "”";
+            bottom: -35px;
+            right: -9px;
+          }
+        }
+        cite {
+          font-size: 10px;
+          font-style: italic;
+          color: #fffdfa;
+        }
       }
 
       .waving-hand {
@@ -587,11 +654,17 @@ body {
       font-size: 22px;
       padding-bottom: 30px;
     }
-    a {
-      border: 3px solid $dark-color;
-      color: $dark-color;
-      padding: 10px;
-      border-radius: 10px;
+    .btn-container {
+      display: flex;
+      align-items: center;
+
+      button {
+        border: 3px solid $dark-color;
+        color: $dark-color;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
     }
   }
   .social-icons-mobile {
@@ -628,10 +701,20 @@ body {
     .about-inner {
       grid-template-columns: 1fr;
     }
+    .right {
+      margin-top: 10px;
+    }
   }
 }
 
 @media (max-width: $breakpoint-tablet) {
+  #about {
+    .about-inner {
+      .left {
+        font-size: 18px;
+      }
+    }
+  }
   #process {
     .process-inner {
       .step-three {
@@ -692,6 +775,25 @@ body {
           .hero-inner {
             .hero-inner-middle {
               margin-top: 30px;
+
+              .image-shape {
+                width: 270px;
+                height: 270px;
+              }
+              h1 {
+                #name {
+                  font-size: 80px;
+                }
+              }
+              p {
+                font-size: 18px;
+              }
+              .buttons {
+                #btn-contact,
+                #btn-projects {
+                  padding: 8px 28px;
+                }
+              }
             }
           }
         }
@@ -699,7 +801,38 @@ body {
     }
   }
 
+  #projects {
+    .projects-inner {
+      width: 100%;
+      .project-title {
+        font-size: 30px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  #about {
+    h1 {
+      font-size: 30px;
+    }
+    .about-inner {
+      .left {
+        text-align: center;
+      }
+      .right {
+        .right-image {
+          background-position: center;
+        }
+      }
+    }
+  }
+
   #process {
+    h1 {
+      font-size: 30px;
+    }
     .process-inner {
       justify-items: center;
 
@@ -709,6 +842,11 @@ body {
         .image {
           position: relative;
           grid-row: 1/2;
+
+          &::before {
+            font-size: 70px;
+            bottom: 10px;
+          }
         }
 
         &:hover .image,
@@ -732,11 +870,21 @@ body {
   }
 
   #contact {
+    h1 {
+      font-size: 30px;
+    }
+
     .contact-inner {
       padding: 0 20px;
+
+      p {
+        font-size: 18px;
+        padding-top: 30px;
+      }
     }
     .social-icons-mobile {
       display: flex;
+      gap: 10px;
 
       a {
         border: none;

@@ -10,3 +10,27 @@ const navSlide = () => {
 };
 
 navSlide();
+
+//copy to clipboard
+
+document
+  .getElementById("email-button")
+  .addEventListener("click", copyToClipboard);
+
+function copyToClipboard() {
+  const emailCopy = document.querySelector("#email").textContent;
+
+  document.addEventListener(
+    "copy",
+    function (e) {
+      e.preventDefault();
+      e.clipboardData.setData("text/plain", emailCopy);
+    },
+    true
+  );
+  document.execCommand("copy");
+  console.log(emailCopy);
+}
+
+const emailCopy = document.querySelector("#email");
+console.log(emailCopy);
