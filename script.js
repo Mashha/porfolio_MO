@@ -28,8 +28,9 @@ function copyToClipboard() {
     },
     true
   );
-  document.execCommand("copy");
-  console.log(emailCopy);
+  //document.execCommand("copy");
+  navigator.clipboard.writeText(emailCopy);
+
   setTimeout(() => {
     document.querySelector(".message").style.opacity = 0;
   }, 1000);
