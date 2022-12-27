@@ -19,7 +19,7 @@ document
 
 function copyToClipboard() {
   const emailCopy = document.querySelector("#email").textContent;
-
+  document.querySelector(".message").style.opacity = 1;
   document.addEventListener(
     "copy",
     function (e) {
@@ -30,6 +30,9 @@ function copyToClipboard() {
   );
   document.execCommand("copy");
   console.log(emailCopy);
+  setTimeout(() => {
+    document.querySelector(".message").style.opacity = 0;
+  }, 1000);
 }
 
 const emailCopy = document.querySelector("#email");

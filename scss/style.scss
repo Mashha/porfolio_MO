@@ -36,6 +36,9 @@ body {
   font-family: "brooklyn";
 }
 
+html {
+  scroll-behavior: smooth;
+}
 // header
 
 #header {
@@ -397,6 +400,7 @@ body {
       background-color: $white-color;
       position: relative;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border-radius: 10px;
 
       .image {
         position: absolute;
@@ -519,6 +523,7 @@ body {
           position: absolute;
           z-index: -1;
           border-radius: 100%;
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.64);
         }
         blockquote {
           color: #fffdfa;
@@ -652,7 +657,6 @@ body {
 
     p {
       font-size: 22px;
-      padding-bottom: 30px;
     }
     .btn-container {
       display: flex;
@@ -665,6 +669,14 @@ body {
         border-radius: 10px;
         cursor: pointer;
       }
+    }
+
+    .message {
+      padding: 8px 15px;
+      background-color: $red-color;
+      border-radius: 10px;
+      color: $white-color;
+      opacity: 0;
     }
   }
   .social-icons-mobile {
@@ -769,6 +781,7 @@ body {
           }
         }
         .hero-section {
+          grid-template-columns: 1fr;
           .social-icons {
             display: none;
           }
