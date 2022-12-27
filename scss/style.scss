@@ -230,6 +230,8 @@ html {
               font-size: 18px;
               border-radius: 10px;
               border: none;
+              display: flex;
+              align-items: center;
             }
 
             #btn-contact {
@@ -820,6 +822,12 @@ html {
       .project-title {
         font-size: 30px;
       }
+      .project{
+        &:hover:after {
+          pointer-events: none;
+         }
+        
+      }
       p {
         font-size: 18px;
       }
@@ -892,7 +900,6 @@ html {
 
       p {
         font-size: 18px;
-        padding-top: 30px;
       }
     }
     .social-icons-mobile {

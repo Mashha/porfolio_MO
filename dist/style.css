@@ -193,6 +193,8 @@ html {
   font-size: 18px;
   border-radius: 10px;
   border: none;
+  display: flex;
+  align-items: center;
 }
 #header .header-inner .hero-section .hero-inner .hero-inner-middle .buttons #btn-contact {
   background-color: #111844;
@@ -689,6 +691,9 @@ html {
   #projects .projects-inner .project-title {
     font-size: 30px;
   }
+  #projects .projects-inner .project:hover:after {
+    pointer-events: none;
+  }
   #projects .projects-inner p {
     font-size: 18px;
   }
@@ -741,7 +746,6 @@ html {
   }
   #contact .contact-inner p {
     font-size: 18px;
-    padding-top: 30px;
   }
   #contact .social-icons-mobile {
     display: flex;
