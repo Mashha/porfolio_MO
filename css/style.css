@@ -21,15 +21,15 @@
   color: #111844;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   height: 100vh;
   background-color: #fffdfa;
-  font-family: "brooklyn";
-}
-
-html {
-  scroll-behavior: smooth;
+  font-family: "Brooklyn";
 }
 
 #header {
@@ -542,9 +542,13 @@ html {
   filter: none;
 }
 
+svg {
+  margin-bottom: -5px;
+}
+
 #contact {
-  margin: 100px 0;
   letter-spacing: 0.5px;
+  background-color: #f3f4f5;
 }
 #contact h1 {
   text-align: center;
