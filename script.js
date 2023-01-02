@@ -7,6 +7,10 @@ const navSlide = () => {
     navigation.classList.toggle("active");
     burgerMenu.classList.toggle("toggle");
   });
+  navigation.addEventListener("click", function(e){
+   navigation.classList.remove("active")
+   burgerMenu.classList.remove("toggle")
+  })
 };
 
 navSlide();
