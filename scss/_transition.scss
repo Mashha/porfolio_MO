@@ -1,14 +1,30 @@
-@keyframes transitionForPage {
+@-webkit-keyframes transitionForPage {
   from {
     opacity: 0;
+    -webkit-transform: rotateX(10deg);
     transform: rotateX(10deg);
   }
   to {
     opacity: 1;
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+}
+
+@keyframes transitionForPage {
+  from {
+    opacity: 0;
+    -webkit-transform: rotateX(10deg);
+    transform: rotateX(10deg);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
     transform: rotateX(0);
   }
 }
 
 .transition {
+  -webkit-animation: transitionForPage 0.75s;
   animation: transitionForPage 0.75s;
 }
