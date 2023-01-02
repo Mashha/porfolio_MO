@@ -756,6 +756,7 @@ path {
 
 @media (max-width: $breakpoint-mobile) {
   body {
+    position: relative;
     overflow-x: hidden;
 
     #header {

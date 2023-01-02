@@ -767,6 +767,7 @@ path {
 }
 @media (max-width: 508px) {
   body {
+    position: relative;
     overflow-x: hidden;
   }
   body #header {
