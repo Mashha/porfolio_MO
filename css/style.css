@@ -1,5 +1,84 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
+main .main-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  grid-template-rows: repeat(3, auto);
+}
+main .main-inner > * {
+  letter-spacing: 0.5px;
+}
+main .main-inner .top {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: relative;
+}
+main .main-inner .top .fa-regular {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 23px;
+}
+main .main-inner .text {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .main-inner .text h2 {
+  padding-bottom: 10px;
+}
+main .main-inner .text p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+main .main-inner .text ul {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+main .main-inner .text ul li {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-left: 20px;
+}
+main .main-inner .text .buttons {
+  display: flex;
+  gap: 15px;
+}
+main .main-inner .text .buttons a {
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+main .main-inner .text .buttons a:nth-child(1) {
+  background-color: #111844;
+  color: #fffdfa;
+}
+main .main-inner .text .buttons a:nth-child(2) {
+  background-color: #aa1945;
+  color: #fffdfa;
+}
+main .main-inner .image {
+  grid-column: 2/3;
+}
+main .main-inner .image #mock-image {
+  width: 100%;
+}
+main .main-inner #footer {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @font-face {
   font-family: "PoppinsBold";
   src: url("../fonts/Poppins-Bold.ttf");
@@ -543,7 +622,11 @@ body {
 }
 
 svg {
-  margin-bottom: -5px;
+  margin-bottom: -6px;
+}
+
+path {
+  filter: drop-shadow(rgba(0, 0, 0, 0.16) 0px 1px 4px);
 }
 
 #contact {
