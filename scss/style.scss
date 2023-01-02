@@ -1,9 +1,10 @@
-@import "projects";
+@import "projects", "transition";
 @import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
 
 $dark-color: #111844;
 $red-color: #aa1945;
 $white-color: #fffdfa;
+
 $breakpoint-laptop: 1000px;
 $breakpoint-tablet: 768px;
 $breakpoint-mobile: 508px;
@@ -381,7 +382,7 @@ body {
 //process
 
 #process {
-  margin: 100px 0;
+  margin-top: 150px;
 
   h1 {
     text-align: center;
@@ -716,6 +717,15 @@ path {
 }
 
 //media queries
+
+@media (min-width: 1622px){
+  #projects {
+    .projects-inner {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
 @media (max-width: $breakpoint-laptop) {
   #about {
     .about-inner {

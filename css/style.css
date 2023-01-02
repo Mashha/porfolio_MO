@@ -111,8 +111,23 @@ main .main-inner #footer {
   }
   main .main-inner .text ul {
     font-size: 20px;
+    list-style: none;
   }
 }
+@keyframes transitionForPage {
+  from {
+    opacity: 0;
+    transform: rotateX(10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+.transition {
+  animation: transitionForPage 0.75s;
+}
+
 @font-face {
   font-family: "PoppinsBold";
   src: url("../fonts/Poppins-Bold.ttf");
@@ -427,7 +442,7 @@ body {
 }
 
 #process {
-  margin: 100px 0;
+  margin-top: 150px;
 }
 #process h1 {
   text-align: center;
@@ -726,6 +741,11 @@ path {
   color: #fffdfa;
 }
 
+@media (min-width: 1622px) {
+  #projects .projects-inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media (max-width: 1000px) {
   #about .about-inner {
     grid-template-columns: 1fr;
