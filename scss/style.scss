@@ -718,7 +718,7 @@ path {
 
 //media queries
 
-@media (min-width: 1622px){
+@media (min-width: 1622px) {
   #projects {
     .projects-inner {
       grid-template-columns: repeat(3, 1fr);
@@ -788,6 +788,7 @@ path {
             .list-item a {
               color: $white-color;
             }
+
             &.active {
               transform: translateX(0%);
             }
@@ -808,8 +809,8 @@ path {
               margin-top: 30px;
 
               .image-shape {
-                width: 270px;
-                height: 270px;
+                width: 250px;
+                height: 250px;
               }
               h1 {
                 #name {
@@ -839,12 +840,19 @@ path {
         font-size: 30px;
       }
       .project {
-        &:hover:after {
-          pointer-events: none;
+        border-bottom: 10px solid $dark-color;
+        &::after {
+          height: 0;
         }
-      }
-      p {
-        font-size: 18px;
+        &:hover > .project-inner {
+          opacity: 1;
+        }
+        &:hover .link-project {
+          opacity: 0;
+        }
+        p {
+          font-size: 18px;
+        }
       }
     }
   }

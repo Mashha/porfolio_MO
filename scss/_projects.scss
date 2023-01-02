@@ -1,6 +1,8 @@
 $breakpoint-mobile: 508px;
 
 main {
+  background-color: #fffdfa;
+  
   .main-inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
