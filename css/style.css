@@ -798,6 +798,9 @@ path {
   body #header .header-inner nav .list-items .list-item a {
     color: #fffdfa;
   }
+  body #header .header-inner nav .list-items .list-item a:hover::before {
+    opacity: 0;
+  }
   body #header .header-inner nav .list-items.active {
     transform: translateX(0%);
   }

@@ -787,6 +787,10 @@ path {
 
             .list-item a {
               color: $white-color;
+
+              &:hover::before {
+                opacity: 0;
+              }
             }
 
             &.active {
