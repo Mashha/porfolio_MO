@@ -766,12 +766,9 @@ path {
   }
 }
 @media (max-width: 508px) {
-  html {
+  .transition {
     overflow-x: hidden;
-  }
-  body {
     position: relative;
-    overflow-x: hidden;
   }
   body #header {
     height: auto;

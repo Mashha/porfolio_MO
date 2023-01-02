@@ -755,12 +755,11 @@ path {
 }
 
 @media (max-width: $breakpoint-mobile) {
-  html {
+  .transition {
     overflow-x: hidden;
+    position: relative;
   }
   body {
-    position: relative;
-    overflow-x: hidden;
 
     #header {
       height: auto;
