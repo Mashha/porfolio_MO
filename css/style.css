@@ -518,7 +518,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
+  letter-spacing: 0.5px;
 }
 #process .process-inner .card .content h2 {
   margin-bottom: 5px;
@@ -831,6 +831,13 @@ path {
   body #header .header-inner .hero-section .hero-inner .hero-inner-middle .buttons #btn-contact,
   body #header .header-inner .hero-section .hero-inner .hero-inner-middle .buttons #btn-projects {
     padding: 8px 28px;
+  }
+  body #header .header-inner .hero-section .hero-inner .hero-inner-middle .buttons #btn-contact:hover {
+    background-position: right;
+  }
+  body #header .header-inner .hero-section .hero-inner .hero-inner-middle .buttons #btn-projects:hover {
+    border-color: #111844;
+    color: #111844;
   }
   #projects .projects-inner {
     width: 100%;

@@ -460,7 +460,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        box-sizing: border-box;
+        letter-spacing: 0.5px;
 
         h2 {
           margin-bottom: 5px;
@@ -828,6 +828,13 @@ path {
                 #btn-contact,
                 #btn-projects {
                   padding: 8px 28px;
+                }
+                #btn-contact:hover {
+                  background-position: right;
+                }
+                #btn-projects:hover {
+                  border-color: $dark-color;
+                  color: $dark-color;
                 }
               }
             }
