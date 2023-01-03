@@ -1,5 +1,6 @@
 @import "projects", "transition";
 @import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,800;1,1000&display=swap");
 
 $dark-color: #111844;
 $red-color: #aa1945;
@@ -12,14 +13,6 @@ $breakpoint-mobile: 508px;
 @font-face {
   font-family: "PoppinsBold";
   src: url("../fonts/Poppins-Bold.ttf");
-}
-@font-face {
-  font-family: "PoppinsRegular";
-  src: url("../fonts/Poppins-Regular.ttf");
-}
-@font-face {
-  font-family: "Brooklyn";
-  src: url("../fonts/Filmotype-Brooklyn.ttf");
 }
 
 *,
@@ -37,7 +30,8 @@ body {
   width: 100%;
   height: 100vh;
   background-color: $white-color;
-  font-family: "Brooklyn";
+  font-family: "nunito";
+  font-weight: 300;
 }
 
 // header
@@ -266,11 +260,13 @@ body {
 
           h1 {
             font-size: 30px;
+            font-weight: 400;
 
             #name {
               font-size: 96px;
               font-family: "Inspiration", sans-serif;
               color: $red-color;
+              font-weight: 700;
             }
           }
 
@@ -279,6 +275,7 @@ body {
             margin-top: -20px;
             border-top: 1px solid rgba(0, 0, 0, 0.24);
             padding-top: 20px;
+            font-weight: 400;
           }
 
           .buttons {
@@ -397,10 +394,12 @@ body {
 
     .project-title {
       font-size: 35px;
+      font-weight: 1000;
     }
 
     p {
       font-size: 22px;
+      font-weight: 400;
     }
 
     .project {
@@ -449,6 +448,7 @@ body {
 
       .project-inner {
         position: relative;
+        text-align: center;
 
         img {
           width: 150px;
@@ -481,7 +481,7 @@ body {
         -webkit-transition-delay: 0;
         -o-transition-delay: 0;
         transition-delay: 0;
-        font-family: "PoppinsBold";
+        font-weight: 600;
       }
 
       &:hover .link-project {
@@ -502,6 +502,7 @@ body {
     text-align: center;
     letter-spacing: 0.5px;
     font-size: 35px;
+    font-weight: 1000;
   }
 
   .process-inner {
@@ -579,7 +580,6 @@ body {
       }
 
       .content {
-        font-family: "brooklyn";
         position: absolute;
         right: 0;
         width: calc(100% - 75px);
@@ -595,9 +595,11 @@ body {
         -ms-flex-align: center;
         align-items: center;
         letter-spacing: 0.5px;
+        font-weight: 300;
 
         h2 {
           margin-bottom: 5px;
+          font-weight: 600;
         }
       }
     }
@@ -611,6 +613,7 @@ body {
   h1 {
     font-size: 35px;
     text-align: center;
+    font-weight: 1000;
   }
 
   .about-inner {
@@ -640,6 +643,9 @@ body {
       letter-spacing: 0.5px;
       font-size: 20px;
 
+      div {
+        font-weight: 500;
+      }
       p {
         font: 26px;
 
@@ -686,6 +692,7 @@ body {
         blockquote {
           color: #fffdfa;
           position: relative;
+          font-size: 15px;
 
           &::before,
           &::after {
@@ -863,6 +870,7 @@ path {
   h1 {
     text-align: center;
     font-size: 35px;
+    font-weight: 1000;
   }
 
   .contact-inner {
@@ -885,6 +893,7 @@ path {
 
     p {
       font-size: 22px;
+      font-weight: 400;
     }
     .btn-container {
       display: -webkit-box;
@@ -999,6 +1008,7 @@ path {
           .logo {
             z-index: 2;
           }
+
           .list-items {
             position: absolute;
             top: 0;

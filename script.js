@@ -7,7 +7,7 @@ const navSlide = () => {
     navigation.classList.toggle("active");
     burgerMenu.classList.toggle("toggle");
   });
-  navigation.addEventListener("click", function(e){
+  navigation.addEventListener("click", function(){
    navigation.classList.remove("active")
    burgerMenu.classList.remove("toggle")
   })
