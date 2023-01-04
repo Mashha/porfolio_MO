@@ -11,9 +11,6 @@ main .main-inner {
   grid-template-columns: 1fr 1fr;
   height: 100vh;
 }
-main .main-inner > * {
-  letter-spacing: 0.5px;
-}
 main .main-inner .top {
   grid-column: 1/-1;
   display: -webkit-box;
@@ -151,12 +148,27 @@ main .main-inner #footer {
   }
 }
 @media (max-width: 508px) {
-  main .main-inner .text p {
+  main .main-inner .top .fa-regular {
+    display: none;
+  }
+  main .main-inner .top h1 {
+    font-size: 22px;
+  }
+  main .main-inner .top p {
     font-size: 16px;
+  }
+  main .main-inner .text h2 {
+    font-size: 22px;
   }
   main .main-inner .text ul {
     font-size: 20px;
     list-style: none;
+  }
+  main .main-inner .text ul li {
+    margin-left: 0;
+  }
+  main .main-inner #footer .footer-inner p {
+    font-size: 15px;
   }
 }
 @-webkit-keyframes transitionForPage {

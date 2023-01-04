@@ -10,10 +10,6 @@ main {
     grid-template-columns: 1fr 1fr;
     height: 100vh;
 
-    & > * {
-      letter-spacing: 0.5px;
-    }
-
     .top {
       grid-column: 1/-1;
       display: -webkit-box;
@@ -172,14 +168,37 @@ main {
 @media (max-width: $breakpoint-mobile) {
   main {
     .main-inner {
-      .text {
+      .top {
+        .fa-regular {
+          display: none;
+        }
+        h1 {
+          font-size: 22px;
+        }
         p {
           font-size: 16px;
+        }
+      }
+      .text {
+        h2 {
+          font-size: 22px;
         }
 
         ul {
           font-size: 20px;
           list-style: none;
+
+          li {
+            margin-left: 0;
+          }
+        }
+      }
+
+      #footer {
+        .footer-inner {
+          p {
+            font-size: 15px;
+          }
         }
       }
     }
