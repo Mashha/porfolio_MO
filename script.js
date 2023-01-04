@@ -42,19 +42,3 @@ function copyToClipboard() {
 
 const emailCopy = document.querySelector("#email");
 
-//slide in on scroll
-const box = document.querySelector(".left")
-
-window.addEventListener("scroll", checkBoxes)
-// where is the trigger point
-function checkBoxes(){
-  const fadeIn = window.innerHeight / 5 * 3
-
-  const boxTop = box.getBoundingClientRect().top
-  if(boxTop < fadeIn){
-    box.classList.add("show")
-  } else {
-    box.classList.remove("show")
-  }
-}
-

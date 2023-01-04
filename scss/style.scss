@@ -388,7 +388,6 @@ body {
     p {
       grid-column: 1/-1;
       text-align: center;
-     
     }
 
     .project-title {
@@ -646,6 +645,9 @@ body {
 
         &:nth-child(5) {
           padding-bottom: 30px;
+        }
+        .bold {
+          font-weight: 600;
         }
       }
 
