@@ -41,4 +41,4 @@ function copyToClipboard() {
 }
 
 const emailCopy = document.querySelector("#email");
-console.log(emailCopy);
+
