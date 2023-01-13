@@ -988,10 +988,6 @@ path {
 }
 
 @media (max-width: $breakpoint-mobile) {
-  .transition {
-    overflow-x: hidden;
-    position: relative;
-  }
   body {
     #header {
       height: auto;
@@ -1009,7 +1005,7 @@ path {
             position: absolute;
             top: 0;
             right: 0;
-            height: 100vh;
+            height: 0;
             width: 100%;
             background-color: $dark-color;
             display: -webkit-box;
@@ -1027,14 +1023,12 @@ path {
             align-items: center;
             z-index: 1;
             gap: 100px;
-            -webkit-transform: translateX(100%);
-            -ms-transform: translateX(100%);
-            transform: translateX(100%);
-            -webkit-transition: -webkit-transform 0.5s ease-in;
-            transition: -webkit-transform 0.5s ease-in;
-            -o-transition: transform 0.5s ease-in;
-            transition: transform 0.5s ease-in;
-            transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+            -webkit-transition: height 0.5s ease-in;
+            transition: height 0.5s ease-in;
+            -o-transition: height 0.5s ease-in;
+            transition: height 0.5s ease-in-out;
+            transition: height 0.5s ease-in;
+            overflow: hidden;
 
             .list-item a {
               color: $white-color;
@@ -1045,9 +1039,7 @@ path {
             }
 
             &.active {
-              -webkit-transform: translateX(0%);
-              -ms-transform: translateX(0%);
-              transform: translateX(0%);
+              height: 100vh;
             }
           }
           .burger-menu {
