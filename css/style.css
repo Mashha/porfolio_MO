@@ -1054,6 +1054,13 @@ path {
   }
   body #header .header-inner {
     height: auto;
+    position: relative;
+  }
+  body #header .header-inner nav {
+    position: fixed;
+    background-color: #fffdfa;
+    width: inherit;
+    z-index: 10;
   }
   body #header .header-inner nav .logo {
     z-index: 2;
@@ -1107,6 +1114,9 @@ path {
   }
   body #header .header-inner .hero-section .social-icons {
     display: none;
+  }
+  body #header .header-inner .hero-section .hero-inner {
+    margin-top: 30px;
   }
   body #header .header-inner .hero-section .hero-inner .hero-inner-middle {
     margin-top: 30px;

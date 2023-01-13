@@ -995,8 +995,14 @@ path {
 
       .header-inner {
         height: auto;
+        position: relative;
 
         nav {
+          position: fixed;
+          background-color: $white-color;
+          width: inherit;
+          z-index: 10;
+
           .logo {
             z-index: 2;
           }
@@ -1055,6 +1061,8 @@ path {
             display: none;
           }
           .hero-inner {
+            margin-top: 30px;
+
             .hero-inner-middle {
               margin-top: 30px;
 
