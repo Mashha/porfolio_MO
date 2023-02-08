@@ -27,6 +27,7 @@ main .main-inner .top {
   -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   position: relative;
+  text-align: center;
 }
 main .main-inner .top .fa-regular {
   position: absolute;
@@ -60,14 +61,23 @@ main .main-inner .text p {
   font-size: 18px;
   padding-bottom: 10px;
 }
-main .main-inner .text ul {
+main .main-inner .text .ul-list {
+  font-size: 20px;
+  font-weight: bold;
+}
+main .main-inner .text .ul-list li {
+  font-size: 16px;
+  font-weight: 100;
+  margin-left: 20px;
+}
+main .main-inner .text .skills {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 15px;
 }
-main .main-inner .text ul li {
+main .main-inner .text .skills li {
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 100;
   margin-left: 20px;
 }
 main .main-inner .text .buttons {

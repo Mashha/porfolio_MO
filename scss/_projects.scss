@@ -26,6 +26,7 @@ main {
       -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
       position: relative;
+      text-align: center;
 
       .fa-regular {
         position: absolute;
@@ -61,14 +62,24 @@ main {
         font-size: 18px;
         padding-bottom: 10px;
       }
-      ul {
+
+      .ul-list {
+        font-size: 20px;
+        font-weight: bold;
+        li {
+          font-size: 16px;
+          font-weight: 100;
+          margin-left: 20px;
+        }
+      }
+      .skills {
         font-size: 22px;
         font-weight: bold;
         margin-bottom: 15px;
 
         li {
           font-size: 18px;
-          font-weight: lighter;
+          font-weight: 100;
           margin-left: 20px;
         }
       }
