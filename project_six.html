@@ -4,9 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/ba4c8dc756.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Weather app</title>
   </head>
   <body>
-    <!-- in progress -->
+    <div class="transition">
+      <main id="main">
+        <div class="main-inner">
+          <div class="top">
+            <a href="index.html#projects"
+              ><i class="fa-regular fa-circle-left"></i
+            ></a>
+            <h1>Weather App</h1>
+            <p>
+              Weather app project allows you to check current weather on desired
+              location and also 3 hour and 4 day forecast.
+            </p>
+          </div>
+          <div class="image">
+            <img src="./images/project_six.png" alt="" id="mock-image" />
+          </div>
+          <div class="text">
+            <h2>Project overview</h2>
+            <p>
+              This project was the first bigger one where I started working with
+              API's. I used openweatermap api's, more specifically one to get
+              the coordinates when you enter the city name in the input field.
+              Then i take that coordinates and add them to the next api, where i
+              "extract" the weather data from. I use the coordinates in my third
+              api as well, where i get the forecast, 3 hour / 5 day api. I also
+              implemented the geolocation api if the user allows the location to
+              be accessed.
+            </p>
+            <p>I made the simple and clean design in figma.</p>
+            <ul>
+              When you search for a city, you can see:
+              <li>current weather and temperature,</li>
+              <li>
+                some basic details like wind speed, pressure, humidity,
+                visibility, min and max temp,
+              </li>
+              <li>todays weather for every three hours,</li>
+              <li>time of sunrise and sunset and,</li>
+              <li>4 day weather in advance.</li>
+            </ul>
+            <p>The project is responsive</p>
+
+            <ul>
+              Technologies used
+              <li>HTML</li>
+              <li>SCSS</li>
+              <li>JavaScript</li>
+              <li>webpack</li>
+            </ul>
+            <div class="buttons">
+              <a href="https://mashha.github.io/weather_app/" target="_blank"
+                >Live version</a
+              >
+              <a href="https://github.com/Mashha/weather_app" target="_blank"
+                >Code</a
+              >
+            </div>
+          </div>
+          <footer id="footer">
+            <div class="footer-inner">
+              <p>
+                <i class="fas fa-copyright"></i> Developed and designed with
+                <i class="fa-solid fa-heart"></i>
+              </p>
+            </div>
+          </footer>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
