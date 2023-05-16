@@ -516,7 +516,7 @@ body {
   display: -ms-grid;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
   justify-items: center;
   position: relative;
 }
@@ -1063,6 +1063,7 @@ path {
     margin-bottom: 100px;
   }
   body #header .header-inner {
+    width: 100%;
     height: auto;
     position: relative;
   }
@@ -1071,6 +1072,7 @@ path {
     background-color: #fffdfa;
     width: inherit;
     z-index: 10;
+    padding: 0 10px;
   }
   body #header .header-inner nav .logo {
     z-index: 2;
@@ -1121,6 +1123,7 @@ path {
   body #header .header-inner .hero-section {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    padding: 0 10px;
   }
   body #header .header-inner .hero-section .social-icons {
     display: none;
@@ -1154,6 +1157,7 @@ path {
   }
   #projects .projects-inner {
     width: 100%;
+    padding: 0 10px;
   }
   #projects .projects-inner p {
     font-size: 18px;
@@ -1163,6 +1167,7 @@ path {
   }
   #projects .projects-inner .project {
     border-bottom: 10px solid #111844;
+    width: 330px;
   }
   #projects .projects-inner .project::after {
     height: 0;
@@ -1179,12 +1184,20 @@ path {
   #about h1 {
     font-size: 30px;
   }
+  #about .about-inner {
+    width: 100%;
+    padding: 0 10px;
+    gap: 30px;
+  }
   #about .about-inner .left {
     text-align: center;
     font-size: 16px;
   }
   #about .about-inner .right .right-image {
     background-position: center;
+  }
+  #process {
+    margin-top: 100px;
   }
   #process h1 {
     font-size: 30px;
@@ -1227,7 +1240,7 @@ path {
     font-size: 30px;
   }
   #contact .contact-inner {
-    padding: 0 20px;
+    padding: 0 20px 10px 20px;
   }
   #contact .contact-inner p {
     font-size: 18px;
@@ -1236,7 +1249,7 @@ path {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 10px;
+    gap: 15px;
   }
   #contact .social-icons-mobile a {
     border: none;

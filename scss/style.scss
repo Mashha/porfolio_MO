@@ -380,7 +380,7 @@ body {
     display: -ms-grid;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
     justify-items: center;
     position: relative;
 
@@ -994,6 +994,7 @@ path {
       margin-bottom: 100px;
 
       .header-inner {
+        width: 100%;
         height: auto;
         position: relative;
 
@@ -1002,6 +1003,7 @@ path {
           background-color: $white-color;
           width: inherit;
           z-index: 10;
+          padding: 0 10px;
 
           .logo {
             z-index: 2;
@@ -1057,6 +1059,7 @@ path {
         .hero-section {
           -ms-grid-columns: 1fr;
           grid-template-columns: 1fr;
+          padding: 0 10px;
           .social-icons {
             display: none;
           }
@@ -1101,6 +1104,7 @@ path {
   #projects {
     .projects-inner {
       width: 100%;
+      padding: 0 10px;
       p {
         font-size: 18px;
       }
@@ -1109,6 +1113,7 @@ path {
       }
       .project {
         border-bottom: 10px solid $dark-color;
+        width: 330px;
         &::after {
           height: 0;
         }
@@ -1130,6 +1135,9 @@ path {
       font-size: 30px;
     }
     .about-inner {
+      width: 100%;
+      padding: 0 10px;
+      gap: 30px;
       .left {
         text-align: center;
         font-size: 16px;
@@ -1143,6 +1151,7 @@ path {
   }
 
   #process {
+    margin-top: 100px;
     h1 {
       font-size: 30px;
     }
@@ -1194,7 +1203,7 @@ path {
     }
 
     .contact-inner {
-      padding: 0 20px;
+      padding: 0 20px 10px 20px;
 
       p {
         font-size: 18px;
@@ -1204,7 +1213,7 @@ path {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      gap: 10px;
+      gap: 15px;
 
       a {
         border: none;
